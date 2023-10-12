@@ -1415,7 +1415,7 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   font-family: "Manrope";
   font-display: swap;
-  src: url("../../fonts/Manrope-Regular.woff2") format("woff2"), url("../../fonts/Manrope-Regular.woff") format("woff");
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -1423,7 +1423,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-family: "Manrope";
   font-display: swap;
-  src: url("../../fonts/Manrope-Medium.woff2") format("woff2"), url("../../fonts/Manrope-Medium.woff") format("woff");
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -1431,7 +1431,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-family: "Manrope";
   font-display: swap;
-  src: url("../../fonts/Manrope-Bold.woff2") format("woff2"), url("../../fonts/Manrope-Bold.woff") format("woff");
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff");
 }
 
 /* stylelint-disable */
