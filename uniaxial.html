@@ -22,7 +22,8 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="wrapper webp">
+      <div class="overlay" data-overlay data-close-menu></div>
       <header class="page-header" data-header-element>
         <div class="page-header__container" data-header>
           <div class="container">
@@ -39,8 +40,9 @@
                 </svg>
               </button>
               <div class="page-header__logo logo logo--header">
+                <h1 class="visually-hidden">Легковые автоприцепы</h1>
                 <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
-                  <svg width="205" height="62">
+                  <svg width="113" height="43">
                     <use href="img/sprite.svg#icon-logo-dark"></use>
                   </svg>
                 </a>
@@ -60,10 +62,17 @@
                     <a class="page-header__link nav__link" href="boat.html" data-link-menu>Прицепы для водной
                       техники</a>
                   </li>
+                  <!-- <li class="page-header__item nav__item">
+                          <a class="page-header__link nav__link" href="#contacts" data-link-menu>Контакты</a>
+                        </li>
+                        <li class="page-header__item nav__item">
+                          <a class="page-header__link nav__link" href="#reviews" data-link-menu>Отзывы</a>
+                        </li> -->
                 </ul>
               </nav>
               <div class="page-header__phone">
-                <a class="page-header__link page-header__link--phone" href="tel:88007253232">8 800 725 32 32</a>
+                <a class="page-header__link page-header__link--phone" href="tel:375295944261">+375(29)594-42-61</a><a
+                  class="page-header__link page-header__link--phone" href="tel:+79206691969">+7 (920) 669-19-69</a>
               </div>
             </div>
           </div>
@@ -563,6 +572,40 @@
           </div>
         </section>
 
+        <section class="contacts">
+          <div class="container contacts__container">
+            <h2 class="contacts__tilte section-title">Наши контакты</h2>
+            <div class="contacts__info">
+              <div class="contacts__col">
+                <a href="tel:+375295944261"><svg width="48" height="48">
+                    <use href="img/sprite.svg#icon-phone"></use>
+                  </svg>+375(29)594 42 61</a>
+              </div>
+              <div class="contacts__col">
+                <a href="viber://chat?number=%2B375295944261"><svg width="52" height="52">
+                    <use href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="contacts__col">
+                <a href="https://api.whatsapp.com/send/?phone=375295944261"><svg width="52" height="52">
+                    <use href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </a></a>
+              </div>
+              <div class="contacts__col">
+                <a href="mailto:prichapi@yandex.ru">
+                  <svg width="52" height="52">
+                    <use href="img/sprite.svg#icon-mail"></use>
+                  </svg>prichapi@yandex.ru</a>
+              </div>
+            </div>
+            <!-- <div class="contacts__map map">
+                      <div class="map__wrapper"><img src="" alt=""></div>
+                    </div>
+                  </div> -->
+        </section>
+
       </main>
       <footer class="page-footer">
         <div class="container page-footer__container">
@@ -580,7 +623,7 @@
                   <a class="page-footer__link nav__link" href="index.html" data-link-menu>Главная</a>
                 </li>
                 <li class="page-footer__item nav__item">
-                  <a class="page-footer__link nav__link" data-link-menu>Одноосные прицепы</a>
+                  <a class="page-footer__link nav__link" href="uniaxial.html">Одноосные прицепы</a>
                 </li>
                 <li class="page-footer__item nav__item">
                   <a class="page-footer__link nav__link" href="biaxial.html" data-link-menu>Двухосные прицепы</a>
@@ -592,11 +635,13 @@
               </ul>
             </nav>
             <div class="page-footer__phone">
-              <a class="page-footer__link page-footer__link--phone" href="tel:88007253232">8 800 725 32 32</a>
+              <a class="page-footer__link page-footer__link--phone" href="tel:375295944261">+375 (29) 594-42-61</a>
+              <a class="page-footer__link page-footer__link--phone" href="tel:79206691969">+7 (920) 669-19-69</a>
             </div>
           </div>
         </div>
       </footer>
+      <div class="overlay" data-overlay></div>
     </div>
     <!-- -01 -->
     <div class="modal modal--preload" data-modal="t1713-01">
@@ -656,11 +701,13 @@
                   <td>2 колеса R13</td>
                 </tr>
                 <tr>
-                  <td><span>29100<svg width="10" height="18">
+                  <td><span>32000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>35100<svg width="10" height="18">
+                  <td><span>38600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -675,7 +722,8 @@
                   <td>Без колес</td>
                 </tr>
                 <tr>
-                  <td><span>33000<svg width="10" height="18">
+                  <td><span>36300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -851,11 +899,13 @@
                   <td>2 колеса R13</td>
                 </tr>
                 <tr>
-                  <td><span>35800<svg width="10" height="18">
+                  <td><span>39400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>41800<svg width="10" height="18">
+                  <td><span>46000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -870,7 +920,8 @@
                   <td>Без колес</td>
                 </tr>
                 <tr>
-                  <td><span>39700<svg width="10" height="18">
+                  <td><span>43700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1041,11 +1092,13 @@
                   <td>2 колеса R13</td>
                 </tr>
                 <tr>
-                  <td><span>38000<svg width="10" height="18">
+                  <td><span>41800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>44000<svg width="10" height="18">
+                  <td><span>48400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1060,7 +1113,8 @@
                   <td>Без колес</td>
                 </tr>
                 <tr>
-                  <td><span>41900<svg width="10" height="18">
+                  <td><span>46100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1235,11 +1289,13 @@
                   <td>2 колеса R13</td>
                 </tr>
                 <tr>
-                  <td><span>40000<svg width="10" height="18">
+                  <td><span>44000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>46000<svg width="10" height="18">
+                  <td><span>50600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1254,7 +1310,8 @@
                   <td>Без колес</td>
                 </tr>
                 <tr>
-                  <td><span>43900<svg width="10" height="18">
+                  <td><span>48300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1429,11 +1486,13 @@
                   <td>2 колеса R13</td>
                 </tr>
                 <tr>
-                  <td><span>46500<svg width="10" height="18">
+                  <td><span>51200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>52500<svg width="10" height="18">
+                  <td><span>57800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1448,7 +1507,8 @@
                   <td>Без колес</td>
                 </tr>
                 <tr>
-                  <td><span>50400<svg width="10" height="18">
+                  <td><span>55500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1623,11 +1683,13 @@
                   <td>2 колеса R13</td>
                 </tr>
                 <tr>
-                  <td><span>48600<svg width="10" height="18">
+                  <td><span>53500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>54600<svg width="10" height="18">
+                  <td><span>60100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1642,7 +1704,8 @@
                   <td>Без колес</td>
                 </tr>
                 <tr>
-                  <td><span>52500<svg width="10" height="18">
+                  <td><span>57800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1817,11 +1880,13 @@
                   <td>2 колеса R13</td>
                 </tr>
                 <tr>
-                  <td><span>49100<svg width="10" height="18">
+                  <td><span>54000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>55100<svg width="10" height="18">
+                  <td><span>60600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -1836,7 +1901,8 @@
                   <td>Без колес</td>
                 </tr>
                 <tr>
-                  <td><span>53000<svg width="10" height="18">
+                  <td><span>58300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2011,11 +2077,13 @@
                   <td>2 колеса R13</td>
                 </tr>
                 <tr>
-                  <td><span>49800<svg width="10" height="18">
+                  <td><span>54800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>55800<svg width="10" height="18">
+                  <td><span>61400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2030,7 +2098,8 @@
                   <td>Без колес</td>
                 </tr>
                 <tr>
-                  <td><span>53700<svg width="10" height="18">
+                  <td><span>59100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2205,11 +2274,13 @@
                   <td>2 колеса R13</td>
                 </tr>
                 <tr>
-                  <td><span>52400<svg width="10" height="18">
+                  <td><span>57700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>58400<svg width="10" height="18">
+                  <td><span>64300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2224,7 +2295,8 @@
                   <td>Без колес</td>
                 </tr>
                 <tr>
-                  <td><span>56300<svg width="10" height="18">
+                  <td><span>62000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2413,20 +2485,24 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>33700<svg width="10" height="18">
+                  <td><span>37100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>39700<svg width="10" height="18">
+                  <td><span>43700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>37700<svg width="10" height="18">
+                  <td><span>41500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>43700<svg width="10" height="18">
+                  <td><span>48100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2443,13 +2519,15 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>37600<svg width="10" height="18">
+                  <td><span>41400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>41600<svg width="10" height="18">
+                  <td><span>45800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2645,29 +2723,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>41700<svg width="10" height="18">
+                  <td><span>45870
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>47700<svg width="10" height="18">
+                  <td><span>52500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>46000<svg width="10" height="18">
+                  <td><span>50600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>52000<svg width="10" height="18">
+                  <td><span>57200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>50900<svg width="10" height="18">
+                  <td><span>56000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>56900<svg width="10" height="18">
+                  <td><span>62600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2684,19 +2768,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>45600<svg width="10" height="18">
+                  <td><span>50200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>49900<svg width="10" height="18">
+                  <td><span>54900
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>54800<svg width="10" height="18">
+                  <td><span>60300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2895,29 +2982,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>38800<svg width="10" height="18">
+                  <td><span>42700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>44800<svg width="10" height="18">
+                  <td><span>49300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>43100<svg width="10" height="18">
+                  <td><span>47400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>49100<svg width="10" height="18">
+                  <td><span>54000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>48000<svg width="10" height="18">
+                  <td><span>52800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>54000<svg width="10" height="18">
+                  <td><span>59400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -2934,19 +3027,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>42700<svg width="10" height="18">
+                  <td><span>47000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>47000<svg width="10" height="18">
+                  <td><span>51700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>51900<svg width="10" height="18">
+                  <td><span>57100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -3145,29 +3241,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>41300<svg width="10" height="18">
+                  <td><span>45400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>47350<svg width="10" height="18">
+                  <td><span>52100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>46100<svg width="10" height="18">
+                  <td><span>50700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>52100<svg width="10" height="18">
+                  <td><span>57300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>51200<svg width="10" height="18">
+                  <td><span>56300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>57250<svg width="10" height="18">
+                  <td><span>63000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -3184,19 +3286,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>45250<svg width="10" height="18">
+                  <td><span>49800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>50000<svg width="10" height="18">
+                  <td><span>55000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>55150<svg width="10" height="18">
+                  <td><span>60700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -3395,29 +3500,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>43150<svg width="10" height="18">
+                  <td><span>47500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>49150<svg width="10" height="18">
+                  <td><span>54100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>47900<svg width="10" height="18">
+                  <td><span>52700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>53900<svg width="10" height="18">
+                  <td><span>59300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>53050<svg width="10" height="18">
+                  <td><span>58400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>59050<svg width="10" height="18">
+                  <td><span>65000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -3434,19 +3545,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>47050<svg width="10" height="18">
+                  <td><span>51800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>51800<svg width="10" height="18">
+                  <td><span>57000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>56950<svg width="10" height="18">
+                  <td><span>62700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -3563,6 +3677,7 @@
         </div>
       </div>
     </div>
+    <!-- окргл 100 -->
 
     <div class="modal modal--preload" data-modal="item-t-2515-03">
       <div class="modal__wrapper">
@@ -3646,29 +3761,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>50350<svg width="10" height="18">
+                  <td><span>55400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>56350<svg width="10" height="18">
+                  <td><span>62000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220</td>
-                  <td><span>65350<svg width="10" height="18">
+                  <td><span>71900
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>71350<svg width="10" height="18">
+                  <td><span>78500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220C</td>
-                  <td><span>68150<svg width="10" height="18">
+                  <td><span>75000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>74150<svg width="10" height="18">
+                  <td><span>81600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -3685,19 +3806,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>54250<svg width="10" height="18">
+                  <td><span>59700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220</td>
-                  <td><span>69250<svg width="10" height="18">
+                  <td><span>76200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220C</td>
-                  <td><span>72050<svg width="10" height="18">
+                  <td><span>79300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -3818,7 +3942,7 @@
         </div>
       </div>
     </div>
-
+    <!-- окргл 100 -->
     <div class="modal modal--preload" data-modal="item-t-3015-03">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -3901,29 +4025,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>54150<svg width="10" height="18">
+                  <td><span>59600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>60150<svg width="10" height="18">
+                  <td><span>66200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220</td>
-                  <td><span>71950<svg width="10" height="18">
+                  <td><span>79200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>77950<svg width="10" height="18">
+                  <td><span>85800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220C</td>
-                  <td><span>74550<svg width="10" height="18">
+                  <td><span>82000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>80550<svg width="10" height="18">
+                  <td><span>88600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -3940,19 +4070,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>58050<svg width="10" height="18">
+                  <td><span>63900
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220</td>
-                  <td><span>75850<svg width="10" height="18">
+                  <td><span>83500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220C</td>
-                  <td><span>78450<svg width="10" height="18">
+                  <td><span>86300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -4156,29 +4289,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>55500<svg width="10" height="18">
+                  <td><span>61100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>61500<svg width="10" height="18">
+                  <td><span>67700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220</td>
-                  <td><span>74900<svg width="10" height="18">
+                  <td><span>82400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>80900<svg width="10" height="18">
+                  <td><span>89000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220C</td>
-                  <td><span>78000<svg width="10" height="18">
+                  <td><span>85800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>84000<svg width="10" height="18">
+                  <td><span>92400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -4411,29 +4550,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>55550<svg width="10" height="18">
+                  <td><span>61200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>61550<svg width="10" height="18">
+                  <td><span>67800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220</td>
-                  <td><span>74650<svg width="10" height="18">
+                  <td><span>82200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>80650<svg width="10" height="18">
+                  <td><span>88800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220C</td>
-                  <td><span>77350<svg width="10" height="18">
+                  <td><span>85100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>83350<svg width="10" height="18">
+                  <td><span>91700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -4658,29 +4803,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>59100<svg width="10" height="18">
+                  <td><span>65100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>65100<svg width="10" height="18">
+                  <td><span>71700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220</td>
-                  <td><span>80500<svg width="10" height="18">
+                  <td><span>88600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>86500<svg width="10" height="18">
+                  <td><span>95200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H1220C</td>
-                  <td><span>84300<svg width="10" height="18">
+                  <td><span>92800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>90300<svg width="10" height="18">
+                  <td><span>99400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -4902,20 +5053,28 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>34600<svg width="10" height="18">
+                  <td><span>38100
+
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>40600<svg width="10" height="18">
+                  <td><span>44700
+
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>38600<svg width="10" height="18">
+                  <td><span>42500
+
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>44600<svg width="10" height="18">
+                  <td><span>49100
+
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -4932,13 +5091,16 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>38500<svg width="10" height="18">
+                  <td><span>42400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>42500<svg width="10" height="18">
+                  <td><span>46800
+
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -5137,29 +5299,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>42800<svg width="10" height="18">
+                  <td><span>47100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>48800<svg width="10" height="18">
+                  <td><span>53700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>47100<svg width="10" height="18">
+                  <td><span>51900
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>53100<svg width="10" height="18">
+                  <td><span>58500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>52000<svg width="10" height="18">
+                  <td><span>57200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>58000<svg width="10" height="18">
+                  <td><span>63800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -5176,19 +5344,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>46700<svg width="10" height="18">
+                  <td><span>51400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>51000<svg width="10" height="18">
+                  <td><span>56100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>55900<svg width="10" height="18">
+                  <td><span>61500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -5387,29 +5558,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>40200<svg width="10" height="18">
+                  <td><span>44300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>46200<svg width="10" height="18">
+                  <td><span>50900
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>44500<svg width="10" height="18">
+                  <td><span>49000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>50500<svg width="10" height="18">
+                  <td><span>55600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>49400<svg width="10" height="18">
+                  <td><span>54400
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>55400<svg width="10" height="18">
+                  <td><span>61000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -5426,19 +5603,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>44100<svg width="10" height="18">
+                  <td><span>48600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>48400<svg width="10" height="18">
+                  <td><span>53300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>53300<svg width="10" height="18">
+                  <td><span>58700
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -5637,29 +5817,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>42650<svg width="10" height="18">
+                  <td><span>47000
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>48650<svg width="10" height="18">
+                  <td><span>53600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>47400<svg width="10" height="18">
+                  <td><span>52200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>53400<svg width="10" height="18">
+                  <td><span>58800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>52550<svg width="10" height="18">
+                  <td><span>57900
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>58550<svg width="10" height="18">
+                  <td><span>64500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -5676,19 +5862,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>46550<svg width="10" height="18">
+                  <td><span>51300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>51300<svg width="10" height="18">
+                  <td><span>56500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>56450<svg width="10" height="18">
+                  <td><span>62100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -5887,29 +6076,35 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>44750<svg width="10" height="18">
+                  <td><span>49300
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span>
                   </td>
-                  <td><span>50750<svg width="10" height="18">
+                  <td><span>55900
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>49500<svg width="10" height="18">
+                  <td><span>54500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>55500<svg width="10" height="18">
+                  <td><span>61100
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>54650<svg width="10" height="18">
+                  <td><span>60200
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
-                  <td><span>60650<svg width="10" height="18">
+                  <td><span>66800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
@@ -5926,19 +6121,22 @@
                 </tr>
                 <tr>
                   <td>Нет</td>
-                  <td><span>48650<svg width="10" height="18">
+                  <td><span>53600
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H300</td>
-                  <td><span>53400<svg width="10" height="18">
+                  <td><span>58800
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
                 <tr>
                   <td>H600</td>
-                  <td><span>58550<svg width="10" height="18">
+                  <td><span>64500
+                      <svg width="10" height="18">
                         <use href="img/sprite.svg#icon-rouble"></use>
                       </svg></span></td>
                 </tr>
