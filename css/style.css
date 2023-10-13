@@ -1605,6 +1605,10 @@ button,
   flex-grow: 1;
 }
 
+.overlay--is-open {
+  z-index: 21;
+}
+
 .rouble {
   font-family: "Rouble", "Arial", sans-serif;
   /* stylelint-disable */
@@ -2929,10 +2933,10 @@ button,
     width: 100%;
     height: 100%;
     opacity: 0;
-    z-index: 21;
     background-color: rgba(91, 91, 91, 0.7);
     -webkit-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
+    z-index: -1;
   }
 
   .container {
