@@ -1842,6 +1842,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
 }
 
 .modal__info table.price-table {
@@ -1908,6 +1909,23 @@ button,
   margin: 0;
   margin-bottom: 40px;
   line-height: 120%;
+}
+
+.modal__mark {
+  position: absolute;
+  padding: 10px;
+  left: 0;
+  top: -10px;
+  border-radius: 6px;
+  color: #f6f5f5;
+}
+
+.modal__mark--in-stock {
+  background-color: #01aa52;
+}
+
+.modal__mark--to-order {
+  background-color: #6eacfa;
 }
 
 .btn {
@@ -2256,6 +2274,7 @@ button,
 }
 
 .slide__img-container {
+  position: relative;
   margin-bottom: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2368,6 +2387,23 @@ button,
   margin-left: 4px;
 }
 
+.slide__mark {
+  position: absolute;
+  padding: 10px;
+  left: 0;
+  top: -10px;
+  border-radius: 6px;
+  color: #f6f5f5;
+}
+
+.slide__mark--in-stock {
+  background-color: #01aa52;
+}
+
+.slide__mark--to-order {
+  background-color: #6eacfa;
+}
+
 .slider-btns {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2468,6 +2504,11 @@ button,
 }
 
 .uniaxial__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -2549,6 +2590,11 @@ button,
 }
 
 .biaxial__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -2625,6 +2671,11 @@ button,
 }
 
 .boat__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
