@@ -1797,12 +1797,12 @@ button,
   align-self: center;
   padding: 10px 10px;
   border-radius: 14px;
-  border: 1px solid #5b5b5b;
-  background-color: #01aa52;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
-  color: #f6f5f5;
+  color: #01aa52;
+  background-color: #ffffff;
+  border: 1px solid #01aa52;
   text-transform: uppercase;
   -webkit-transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
@@ -1811,9 +1811,9 @@ button,
 
 .modal__tabs-control.focus-visible:focus {
   outline: none;
-  color: #01aa52;
-  background-color: #ffffff;
-  border: 1px solid #01aa52;
+  color: #f6f5f5;
+  background-color: #01aa52;
+  border: 1px solid #5b5b5b;
 }
 
 .modal__tabs-control.focus-visible:focus:active {
@@ -1827,9 +1827,9 @@ button,
 }
 
 .modal__tabs-control.is-active {
-  color: #01aa52;
-  background-color: #ffffff;
-  border: 1px solid #01aa52;
+  color: #f6f5f5;
+  background-color: #01aa52;
+  border: 1px solid #5b5b5b;
 }
 
 .modal__img-container {
@@ -3621,9 +3621,9 @@ button,
 @media (hover: hover) {
   .modal__tabs-control:hover:not(.focus-visible) {
     outline: none;
-    color: #01aa52;
-    background-color: #ffffff;
-    border: 1px solid #01aa52;
+    color: #f6f5f5;
+    background-color: #01aa52;
+    border: 1px solid #5b5b5b;
   }
 
   .modal__tabs-control:hover:not(.focus-visible):active {
