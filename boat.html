@@ -18,6 +18,7 @@
     <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" crossorigin="anonymous">
     <title>Прицепы для водной техники</title>
+    <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -290,6 +291,23 @@
                   могут быть
                   установлены на&nbsp;необходимую высоту и&nbsp;ширину лодки.</p>
               </div> -->
+
+              <form class="yoomoney-payment-form" action="https://yookassa.ru/integration/simplepay/payment"
+                method="post" accept-charset="utf-8">
+                <input name="customerNumber" type="hidden" value="Вы приобретаете товар">
+                <div class="ym-payment-btn-block ym-align-space-between">
+                  <div class="ym-input-icon-rub">
+                    <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input" type="number"
+                      step="any">
+                  </div>
+                  <button data-text="Оплатить" class="ym-btn-pay ym-result-price">
+                    <span class="ym-text-crop">Оплатить</span>
+                    <span class="ym-price-output"></span>
+                  </button>
+                </div>
+                <input name="shopId" type="hidden" value="278539">
+              </form>
+
               <span></span>
 
               <table class="price-table">
@@ -1056,6 +1074,7 @@
     <!-- TEMPLATE -->
 
     <script src="js/vendor.min.js"></script>
+    <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 
