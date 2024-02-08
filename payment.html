@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Легковые автоприцепы">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon-logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/apple-icon.png">
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#00FF76">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#00FF76">
+  <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" crossorigin="anonymous">
+  <title>Страница заказа</title>
+  <link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper webp">
+    <header class="page-header" data-header-element>
+      <div class="page-header__container" data-header>
+        <div class="container">
+          <div class="page-header__wrapper">
+            <button class="page-header__burger" type="button" aria-label="Переключатель отображения меню."
+              aria-pressed="false" data-burger>
+              <svg class="page-header__burger-icon page-header__burger-icon--open" width="26" height="26"
+                aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-menu"></use>
+              </svg>
+              <svg class="page-header__burger-icon page-header__burger-icon--close" width="22" height="22"
+                aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="page-header__logo logo logo--header">
+              <h1 class="visually-hidden">Легковые автоприцепы</h1>
+              <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
+                <svg width="113" height="43">
+                  <use href="img/sprite.svg#icon-logo-dark"></use>
+                </svg>
+              </a>
+            </div>
+            <nav class="page-header__nav nav nav--header" data-nav-header>
+              <ul class="page-header__list nav__list nav__list--header">
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="index.html" data-link-menu>Главная</a>
+                </li>
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="uniaxial.html" data-link-menu>Одноосные прицепы</a>
+                </li>
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="biaxial.html" data-link-menu>Двухосные прицепы</a>
+                </li>
+                <li class="page-header__item nav__item">
+                  <a class="page-header__link nav__link" href="boat.html" data-link-menu>Прицепы для водной
+                    техники</a>
+                </li>
+                <!-- <li class="page-header__item nav__item">
+                                <a class="page-header__link nav__link" href="#contacts" data-link-menu>Контакты</a>
+                              </li>
+                              <li class="page-header__item nav__item">
+                                <a class="page-header__link nav__link" href="#reviews" data-link-menu>Отзывы</a>
+                              </li> -->
+              </ul>
+            </nav>
+            <div class="page-header__phone">
+              <a class="page-header__link page-header__link--phone" href="tel:+79206691969">+7 (920) 669-19-69</a>
+              <a class="page-header__link page-header__link--phone" href="tel:375295944261">+375(29)594-42-61</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="payment">
+        <h2 class="payment__title visually-hidden">Оплата товара</h2>
+        <div class="container payment__container" data-form-validate="data-form-validate">
+          <form class="ym-form" action="https://yookassa.ru/integration/simplepay/payment" method="post"
+            accept-charset="utf-8" data-ym-form>
+            <div class="ym-form__row ym-form__row--item item">
+              <h4 class="item__text ym-form__subtitle">Информация о товаре</h4>
+              <div class="item__info">
+                <h3 class="item__title" data-item__title>Название прицепа</h3>
+                <div class="item__pay-row">
+                  <span class="item__small-text">Цена:</span>
+                  <input name="sum" placeholder="" class="item__price-input" type="number" step="any" readonly
+                    data-price-input />
+                  <span class="item__small-text">BYN</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ym-form__row ym-form__row--customer-info customer-info">
+              <h4 class="customer-info__title ym-form__subtitle">Информация о покупателе</h4>
+              <div class="customer-info__inner">
+                <div class="ym-form__field" data-on-input-validate="data-on-input-validate" data-validate-type="email"
+                  data-message-base="Обязательное поле" data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно" data-required="data-required">
+                  <label for="user-email" class="visually-hidden">Электронная почта</label>
+                  <input name="cps_email" class="customer-info__input customer-info__input--email" placeholder="Email"
+                    type="email" id="user-email" required>
+                </div>
+                <div class="ym-form__field" data-on-input-validate="data-on-input-validate" data-validate-type="phone"
+                  data-message-base="Обязательное поле" data-message-extra="Проверьте корректность заполнения поля"
+                  data-message-success="Поле заполнено верно" data-required="data-required">
+                  <label for="user-phone" class="visually-hidden">Номер телефона</label>
+                  <input name="cps_phone" class="customer-info__input customer-info__input--phone" placeholder="Телефон"
+                    type="tel" id="user-phone" required>
+                </div>
+                <div class="ym-form__field" data-on-input-validate="data-on-input-validate" data-validate-type="text"
+                  data-limitation="name" data-message-base="Обязательное поле"
+                  data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                  <label for="user-name" class="visually-hidden">ФИО</label>
+                  <input name="custName" class="customer-info__input customer-info__input--full-name" placeholder="ФИО"
+                    type="text" id="user-name" required>
+                </div>
+                <div class="ym-form__field" data-on-input-validate="data-on-input-validate" data-validate-type="text"
+                  data-message-extra="Проверьте корректность заполнения поля">
+                  <label for="user-adress" class="visually-hidden">Адрес</label>
+                  <input name="custAddr" class="customer-info__input customer-info__input--adress" placeholder="Адрес"
+                    type="text" id="user-adress">
+                </div>
+                <div class="ym-form__field" data-validate-type="text">
+                  <label for="user-comment" class="visually-hidden">Комментарий</label>
+                  <textarea class="customer-info__input customer-info__input--text" name="orderDetails"
+                    placeholder="Комментарий к заказу" id="user-comment"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="ym-form__row ym-form__row--pay">
+              <button data-text="Оплатить" class="ym-form__button" type="submit">Оплатить</button>
+              <input name="shopId" type="hidden" value="278539">
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+    </main>
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo logo logo--footer">
+            <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
+              <svg width="205" height="62">
+                <use href="img/sprite.svg#icon-logo-dark"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="page-footer__nav nav nav--footer">
+            <ul class="page-footer__list nav__list nav__list--footer">
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="index.html" data-link-menu>Главная</a>
+              </li>
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="uniaxial.html">Одноосные прицепы</a>
+              </li>
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="biaxial.html" data-link-menu>Двухосные прицепы</a>
+              </li>
+              <li class="page-footer__item nav__item">
+                <a class="page-footer__link nav__link" href="boat.html" data-link-menu>Прицепы для водной
+                  техники</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-footer__about about">
+            <p>ИП&nbsp;Трубчик Анатолий Миронович</p>
+            <p> ИНН 672609854490, ОГРНИП 322673300021844</p>
+            <p>Почтовый адрес 215523, Смоленская область, д.Пушкино, Сафоновский р-он, ул. Пролетарская, дом&nbsp;29,
+              кв. 12</p>
+            <p><span>Телефон: </span><a href="tel:+79206691969">+7 (920) 669-19-69</a><br></p>
+            <p>Почта: <a href="mailto:trubchikanatoly@yandex.by">trubchikanatoly@yandex.by</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay" data-overlay></div>
+  </div>
+
+  <!-- yookassa -->
+  <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js"></script>
+  <!-- yookassa -->
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

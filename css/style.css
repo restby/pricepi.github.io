@@ -1668,29 +1668,42 @@ button,
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: #2c39f2;
-  border: none;
+  margin-left: 10px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #01aa52;
+  background-color: #ffffff;
+  border: 1px solid #01aa52;
+  text-transform: uppercase;
+  -webkit-transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   cursor: pointer;
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
-}
-
-.btn--red {
-  background-color: #ff1553;
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  pointer-events: none;
 }
 
 .btn.focus-visible:focus {
-  opacity: 0.8;
+  outline: none;
+  color: #f6f5f5;
+  background-color: #01aa52;
+  border: 1px solid #5b5b5b;
+}
+
+.btn.focus-visible:focus:active {
+  opacity: 0.7;
+}
+
+.btn--disabled {
+  color: #5b5b5b;
+  pointer-events: none;
+  background: rgba(2, 102, 193, 0.1);
+}
+
+.btn.is-active {
+  color: #f6f5f5;
+  background-color: #01aa52;
+  border: 1px solid #5b5b5b;
 }
 
 .section-title {
@@ -2818,6 +2831,76 @@ button,
   justify-content: space-between;
 }
 
+.item__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.item__pay-row {
+  margin-bottom: 20px;
+}
+
+.item__price-input {
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 78px;
+  width: auto;
+  border: none;
+  border: 1px dashed red;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #5b5b5b;
+}
+
+.item__count-row {
+  margin-bottom: 8px;
+}
+
+.item__count-input {
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 76px;
+  width: auto;
+  border: none;
+  border: 1px dashed red;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #5b5b5b;
+}
+
+.customer-info__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  row-gap: 14px;
+  margin-bottom: 20px;
+}
+
+.customer-info__input {
+  border: 1px solid #5b5b5b;
+  padding: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #5b5b5b;
+}
+
+.customer-info__input--text {
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -3099,6 +3182,20 @@ button,
   padding: 0;
 }
 
+.modal__price-row {
+  margin-bottom: 20px;
+}
+
+.modal__price-row span:last-of-type {
+  margin-right: 10px;
+}
+
+.modal__price-pay {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
 .uniaxial-catalog {
   margin-bottom: 60px;
 }
@@ -3111,16 +3208,16 @@ button,
   margin-bottom: 60px;
 }
 
-.yoomoney-form {
+.ym-form {
   margin-bottom: 20px;
 }
 
-.yoomoney-form__text {
+.ym-form__text {
   margin-top: 0;
   font-size: 18px;
 }
 
-.yoomoney-form__row {
+.ym-form__row--info {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -3132,7 +3229,7 @@ button,
   margin-bottom: 20px;
 }
 
-.yoomoney-form__input {
+.ym-form__input {
   border: 1px solid #5b5b5b;
   padding: 5px;
   font-style: normal;
@@ -3142,21 +3239,8 @@ button,
   color: #5b5b5b;
 }
 
-.yoomoney-form__pay-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.yoomoney-form__pay-row span:first-child {
-  margin-right: 10px;
-}
-
-.yoomoney-form__price-input {
+.ym-form__price-input {
+  background-color: rgba(255, 255, 255, 0);
   max-width: 76px;
   width: auto;
   border: none;
@@ -3168,7 +3252,7 @@ button,
   color: #5b5b5b;
 }
 
-.yoomoney-form__button {
+.ym-form__button {
   padding: 8px;
   border-radius: 8px;
   font-size: 16px;
@@ -3186,27 +3270,46 @@ button,
   cursor: pointer;
 }
 
-.yoomoney-form__button.focus-visible:focus {
+.ym-form__button.focus-visible:focus {
   outline: none;
   color: #f6f5f5;
   background-color: #01aa52;
   border: 1px solid #5b5b5b;
 }
 
-.yoomoney-form__button.focus-visible:focus:active {
+.ym-form__button.focus-visible:focus:active {
   opacity: 0.7;
 }
 
-.yoomoney-form__button--disabled {
+.ym-form__button--disabled {
   color: #5b5b5b;
   pointer-events: none;
   background: rgba(2, 102, 193, 0.1);
 }
 
-.yoomoney-form__button.is-active {
+.ym-form__button.is-active {
   color: #f6f5f5;
   background-color: #01aa52;
   border: 1px solid #5b5b5b;
+}
+
+.ym-form__row--pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ym-form__row--pay span:first-child {
+  margin-right: 10px;
+}
+
+.ym-form__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 /* @mixin hover-focus {
@@ -3859,6 +3962,11 @@ button,
     width: 60%;
   }
 
+  .customer-info__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -3959,19 +4067,26 @@ button,
     margin-bottom: 40px;
   }
 
-  .yoomoney-form__row {
+  .ym-form__row--info {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
-  .yoomoney-form__button {
+  .ym-form__button {
     width: 60%;
   }
 }
 
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
+    outline: none;
+    color: #f6f5f5;
+    background-color: #01aa52;
+    border: 1px solid #5b5b5b;
+  }
+
+  .btn:hover:not(.focus-visible):active {
+    opacity: 0.7;
   }
 
   .page-header__link--phone:hover:not(.focus-visible) {
@@ -4108,14 +4223,14 @@ button,
     opacity: 0.7;
   }
 
-  .yoomoney-form__button:hover:not(.focus-visible) {
+  .ym-form__button:hover:not(.focus-visible) {
     outline: none;
     color: #f6f5f5;
     background-color: #01aa52;
     border: 1px solid #5b5b5b;
   }
 
-  .yoomoney-form__button:hover:not(.focus-visible):active {
+  .ym-form__button:hover:not(.focus-visible):active {
     opacity: 0.7;
   }
 }
